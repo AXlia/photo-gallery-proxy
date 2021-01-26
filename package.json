@@ -1,0 +1,59 @@
+{
+  "name": "photo-gallery",
+  "version": "1.0.0",
+  "description": "Photo gallery component for AXlia.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server/index.js",
+    "test": "jest",
+    "seed": "node server/database/seed.js",
+    "react-dev": "webpack -d eval-source-map --watch",
+    "build": "webpack -d eval-source-map"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AXlia/photo-gallery.git"
+  },
+  "author": "Adam Brent",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AXlia/photo-gallery/issues"
+  },
+  "homepage": "https://github.com/AXlia/photo-gallery#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "mysql2": "^2.2.5",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "sequelize": "^6.3.5",
+    "styled-components": "^5.2.1",
+    "styled-icons": "^10.26.0",
+    "webpack": "^5.14.0"
+  },
+  "engines": {
+    "node": ">=6.13.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "babel-jest": "^26.6.3",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-styled-components": "^1.12.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.5",
+    "eslint": "^7.17.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "faker": "^5.1.0",
+    "jest": "^26.6.3",
+    "jest-environment-enzyme": "^7.1.2",
+    "jest-enzyme": "^7.1.2",
+    "webpack-cli": "^4.3.1",
+    "webpack-dev": "^1.1.1"
+  }
+}
