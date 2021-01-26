@@ -1,7 +1,7 @@
 {
   "name": "photo-gallery",
   "version": "1.0.0",
-  "description": "Photo gallery component for AXlia.",
+  "description": "Proxy server to combine.",
   "main": "index.js",
   "scripts": {
     "start": "nodemon server/index.js",
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AXlia/photo-gallery.git"
+    "url": "https://github.com/AXlia/photo-gallery-proxy.git"
   },
   "author": "Adam Brent",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AXlia/photo-gallery/issues"
+    "url": "https://github.com/AXlia/photo-gallery-proxy/issues"
   },
-  "homepage": "https://github.com/AXlia/photo-gallery#readme",
+  "homepage": "https://github.com/AXlia/photo-gallery-proxy#readme",
   "dependencies": {
     "axios": "^0.21.1",
     "express": "^4.17.1",
