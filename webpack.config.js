@@ -1,4 +1,5 @@
 const path = require('path');
+
 const SRC_DIR = path.join(__dirname, 'client', 'src');
 const PUBLIC_DIR = path.join(__dirname, 'client', 'public');
 
@@ -7,7 +8,7 @@ module.exports = {
   entry: path.join(SRC_DIR, 'index.jsx'),
   output: {
     filename: 'bundle.js',
-    path: PUBLIC_DIR
+    path: PUBLIC_DIR,
   },
   module: {
     rules: [
@@ -18,13 +19,13 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             presets: ['@babel/preset-env', '@babel/preset-react'],
-            plugins: ['babel-plugin-styled-components', '@babel/plugin-proposal-object-rest-spread']
-          }
-        }
-      }
-    ]
+            plugins: ['babel-plugin-styled-components', '@babel/plugin-proposal-object-rest-spread'],
+          },
+        },
+      },
+    ],
   },
   resolve: {
-    extensions: ['.js', '.json', '.jsx', '.css']
-  }
+    extensions: ['.js', '.json', '.jsx', '.css'],
+  },
 };

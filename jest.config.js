@@ -134,7 +134,7 @@ module.exports = {
 
   // Options that will be passed to the testEnvironment
   testEnvironmentOptions: {
-    enzymeAdapter: 'react16'
+    enzymeAdapter: 'react16',
   },
 
   // Adds a location field to test results
@@ -168,8 +168,8 @@ module.exports = {
 
   // A map from regular expressions to paths to transformers
   transform: {
-    "\\.jsx$": "babel-jest", // or this?: "^.+\\.jsx$": "babel-jest",
-  }
+    '\\.jsx$': 'babel-jest', // or this?: "^.+\\.jsx$": "babel-jest",
+  },
 
   // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
   // transformIgnorePatterns: [
