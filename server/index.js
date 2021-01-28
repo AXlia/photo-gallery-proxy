@@ -1,10 +1,13 @@
 const express = require('express');
 const { createProxyMiddleware } = require('http-proxy-middleware');
+const morgan = require('morgan');
 
 const app = express();
 const port = 3000;
 const path = require('path');
 
+// app.use('/:propertyId', express.static(path.join(__dirname, '../client/public')));
+app.use(morgan('dev'));
 app.use(express.static(path.join(__dirname, '../client/public')));
 
 app.use(express.json());
