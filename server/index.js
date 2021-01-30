@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // const carouselService = createProxyMiddleware({ target: 'localhost:3001', changeOrigin: true });
-const carouselService = createProxyMiddleware({ target: 'http://ec2-54-183-174-156.us-west-1.compute.amazonaws.com:3001', changeOrigin: true });
+const carouselService = createProxyMiddleware({ target: 'http://54.183.174.156:3001', changeOrigin: true });
 const affordability = createProxyMiddleware({ target: 'http://localhost:3002', changeOrigin: true });
 const photoGallery = createProxyMiddleware({ target: 'http://localhost:3003', changeOrigin: true });
 
